@@ -27,12 +27,12 @@ public class Program {
 				UI.clearScreen();
 				UI.printBoard(chessMath.getPieces(),possibleMoves);
 				System.out.println();
-				System.out.println("Target: ");
-				ChessPosition target1 = UI.readChessPosition(sc);
+				System.out.print("Target: ");
+				ChessPosition target = UI.readChessPosition(sc);
 				
 				System.out.println();
 				System.out.print("Target: ");
-				ChessPosition target = UI.readChessPosition(sc);
+				
 				
 				ChessPiece capturedPiece = chessMath.performChessMove(source, target);
 			}
